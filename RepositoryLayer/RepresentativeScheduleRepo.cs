@@ -72,7 +72,7 @@ namespace MedicalRepSchedule
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
             using (HttpClient client = new HttpClient(clientHandler))
             {
-                client.BaseAddress = new Uri("https://localhost:44337/MedicineStockInformation");
+                client.BaseAddress = new Uri("https://localhost:44383/api/MedicineStock");
                 List<MedicinestockTable> medicineStocks = await client.GetFromJsonAsync<List<MedicinestockTable>>("");
                 return medicineStocks;
             }
