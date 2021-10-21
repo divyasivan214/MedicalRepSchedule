@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MedicalRepSchedule.Migrations
 {
     [DbContext(typeof(RepresentativeScheduleContext))]
-    [Migration("20211016094403_migr3")]
-    partial class migr3
+    [Migration("20211021063523_rep")]
+    partial class rep
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -105,7 +105,7 @@ namespace MedicalRepSchedule.Migrations
                         {
                             Name = "Dolo 650",
                             ChemicalComposition = "Paracetamol,Acetaminophen",
-                            DateOfExpiry = new DateTime(2022, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateOfExpiry = new DateTime(2022, 12, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumberOfTabletsInStock = 300,
                             TargetAilment = "General"
                         },
@@ -113,7 +113,7 @@ namespace MedicalRepSchedule.Migrations
                         {
                             Name = "Orthoherb",
                             ChemicalComposition = "Castor Plant,Adulsa,Neem,Guggul",
-                            DateOfExpiry = new DateTime(2021, 11, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateOfExpiry = new DateTime(2021, 11, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumberOfTabletsInStock = 190,
                             TargetAilment = "Orthopaedics"
                         },
@@ -129,7 +129,7 @@ namespace MedicalRepSchedule.Migrations
                         {
                             Name = "Gaviscon",
                             ChemicalComposition = "Magnesium,Oxide,Silicon,Sodium",
-                            DateOfExpiry = new DateTime(2022, 8, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DateOfExpiry = new DateTime(2022, 8, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumberOfTabletsInStock = 150,
                             TargetAilment = "General"
                         },
